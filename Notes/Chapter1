@@ -1,0 +1,31 @@
+What is machine Learning ?
+
+1.Machine learning is the science (and art) of programing computers so they can learn from data
+2. A computer program is said to learn from experience E with respect to some task T and some performance measure
+P , if it's performance on T, improves with experience E
+
+For instance a spam filter is a machine laerning program that, given examples of spam emails flagged by users and examples
+of regular emails (non spam, also called "ham"), can learn to flag spam. The examples that the system uses to learn are
+called the training set. Each training example is called a training instance (or sampe). The part of a machine learning
+system that learns and makes predictions is called a model. Neural networks and random forests are examples of models.
+
+In this case, the task T is to flag spam for new emails, the experience E is the training data , and the performance  p
+needs to be define ; for example tou can use the ratio of correctly classified emails. This particular performance measure
+is called accuracy, and it is often used in classification tasks.
+
+Why use Machine Learning ?
+
+Consider how would you write a spam filter using traditional programming techniques
+
+1. first examine what spam typically looks like m might notice some words like 4u or credit card , free
+
+2. write a detection algorithm that looks for these particular words .
+
+3. lunch and test the program -> write new rules   if not sufficient enough (essentially the algorithm would become a
+long list of rules )
+
+the issue with that approach is first of all its not practical, to many rules second of all what if spammers notice all
+their emails containing "4u" are blocked; then they might start using "For u" instead, now I would have to make this a
+new rule. In contrast, a machine learning program will automatically notices that "For U" has becomes unusually frequent
+in spam flagged by useers
+
